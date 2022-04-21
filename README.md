@@ -1,2 +1,2 @@
 # base-apparel
- Third Front End Mentore project
+ Third Front End Mentor project
