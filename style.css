@@ -50,17 +50,18 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: 1.8rem; 
-    margin-right: 1.8rem;    
+    margin-right: 1.8rem; 
+    background-color: transparent;   
 }
 
 .button {
-    padding-top: 0.9rem;
-    padding-bottom:0.9rem;
+    padding-top: 0.7rem;
+    padding-bottom:0.8rem;
     padding-left: 1.9rem;
     padding-right: 1.9rem;
     border-radius: 45px;
     position: absolute;
-    top: 642px;
+    top: 643px;
     left: 270px;
     background: linear-gradient(to right, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     z-index: 1;
@@ -76,7 +77,7 @@ body {
     display: block;
 }
 
-.form.invalid .input-box:before {
+.form .invalid .input-box:before {
     content: "";
     position:absolute;
     right: 990px;
@@ -89,7 +90,7 @@ body {
 }
 
 .invalid #text {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     margin-left: 2.8rem;
 }
 
@@ -97,20 +98,14 @@ footer {
     margin-top: 1.3rem;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    padding-bottom: 10px;
+.attribution {
+    display: none;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
     #image {
         position: absolute;
-        right: 0px;
+        right: 50px;
         top: 0px;
     }
 
@@ -126,7 +121,8 @@ footer {
         position: absolute;
         top: 98%;
         left:49%;
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
+        display:block;
     }
 
     .main {
@@ -186,5 +182,16 @@ footer {
         padding-top: 1rem;
         margin-left: 2.1rem;
     }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        padding-bottom: 10px;
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+  
 }    
 
