@@ -50,24 +50,49 @@ body {
     padding-left: 1.3rem;
     padding-right: 6.3rem;
     margin-left: 1.8rem; 
-    margin-right: 1.8rem;   
+    margin-right: 1.8rem; 
+     
 }
 
-#submit-button{
+/* #submit-button */
+
+.button{
     padding-top: 1rem;
     padding-bottom:1rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
     border-radius: 45px;
-    transform: translate(275px,-54px);
+    position: absolute;
+    top: 590px;
+    left: 520px;
+    /* transform: translate(380px,-52px); */
     background: linear-gradient(to right, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    z-index: 1;
 
 }
 
-#submit-button:hover {
+.button:hover {
     background: linear-gradient(to right, hsl(0, 80%, 96%),hsl(0, 74%, 84%));
     cursor: pointer;
 
+}
+
+#text {
+    display: block;
+
+}
+
+
+.form.invalid .input-box:before {
+    content: "";
+    position:absolute;
+    right: 985px;
+    top: 605px;
+    width: 24px;
+    height: 24px;
+    background: url("images/icon-error.svg");
+    background-size: cover;
+    z-index: 1000;
 }
 
 footer{
