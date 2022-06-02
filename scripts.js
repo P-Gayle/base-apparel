@@ -14,8 +14,7 @@ function validation (){
         form.classList.add("invalid");
         text.innerHTML = "Please provide a valid email";
         text.style.color = "#ff0000";
-        errorBorder.style.border = "3px solid hsl(0, 93%, 68%)";
-       
+        errorBorder.style.border = "3px solid hsl(0, 93%, 68%)";   
     }
     if (email == "") {
         form.classList.remove("valid");

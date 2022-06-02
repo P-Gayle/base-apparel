@@ -7,15 +7,14 @@
 body {
     font-family:'Josefin Sans', sans-serif;
     background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    height: 80vh;
-    
+    /* height: 80vh;    */
 }
 
 #logo {
     padding: 1.6rem;
 }
 
-#we{
+#we {
     color: hsl(0, 36%, 70%);
     font-weight: 300;
 }
@@ -25,9 +24,9 @@ body {
     font-weight: 600;
     letter-spacing: 0.7rem;
     line-height: 2.5rem;
-    padding-top: 3.5rem; 
+    padding-top: 3rem; 
     padding-bottom: 1.6rem;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:hsl(0, 6%, 24%);
 }
 
@@ -35,59 +34,53 @@ body {
     font-size: 15px;
     margin-left: 1.8rem; 
     margin-right: 1.8rem; 
-    margin-bottom: 1.9rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     line-height: 1.3rem;
     color: hsl(0, 36%, 70%);
 }
 
 #email {
+    width: 280px;
     border-radius: 45px;
     border: 2px solid hsla(0, 36%, 70%, 0.3);
     color:hsla(0, 36%, 70%, 0.6);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.3rem;
-    padding-right: 6.3rem;
+    padding-top: 0.8rem;
+    padding-bottom:0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-left: 1.8rem; 
-    margin-right: 1.8rem; 
-     
+    margin-right: 1.8rem;    
 }
 
-/* #submit-button */
-
-.button{
-    padding-top: 1rem;
-    padding-bottom:1rem;
+.button {
+    padding-top: 0.9rem;
+    padding-bottom:0.9rem;
     padding-left: 1.9rem;
     padding-right: 1.9rem;
     border-radius: 45px;
     position: absolute;
-    top: 590px;
-    left: 520px;
-    /* transform: translate(380px,-52px); */
+    top: 642px;
+    left: 270px;
     background: linear-gradient(to right, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     z-index: 1;
-
 }
 
 .button:hover {
     background: linear-gradient(to right, hsl(0, 80%, 96%),hsl(0, 74%, 84%));
     cursor: pointer;
-
+    box-shadow: 5px 10px 20px hsl(0, 36%, 70%);
 }
 
 #text {
     display: block;
-
 }
-
 
 .form.invalid .input-box:before {
     content: "";
     position:absolute;
-    right: 985px;
-    top: 605px;
+    right: 990px;
+    top: 612px;
     width: 24px;
     height: 24px;
     background: url("images/icon-error.svg");
@@ -95,12 +88,24 @@ body {
     z-index: 1000;
 }
 
-footer{
+.invalid #text {
+    padding-top: 0.5rem;
+    margin-left: 2.8rem;
+}
+
+footer {
     margin-top: 1.3rem;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 @media screen and (min-width: 1440px) {
     #image {
@@ -113,7 +118,6 @@ footer{
         position: absolute;
         left: 110px;
         top: 40px;
-
     }
 
     .attribution { 
@@ -128,9 +132,7 @@ footer{
     .main {
         width: 50%;
         margin-top: 11%;
-        margin-left: 9%;
-      
-        
+        margin-left: 9%;        
     }
 
     #soon {
@@ -139,32 +141,50 @@ footer{
         padding-right: 50%;
         line-height: 4.5rem;
         text-align: left;
-
     }
 
     #info {
         text-align: left;
         margin-left: 0px;
+        margin-bottom: 2.5rem;
         padding-right: 35%;
         line-height: 2rem;
         font-size: 16px;
-
     }
 
     #email {
          padding-right: 16rem;
+         padding-left: 2rem;
+         padding-top: 1rem;
+         padding-bottom: 1rem;
          margin-left: 0px; 
          margin-right: 1rem; 
+         width: 450px;     
     }
 
-    #submit-button {
-        transform: translate(-90px,22px);
-        padding-left: 2.3rem;
-        padding-right: 2.3rem;
+    .button {    
+        position: absolute;
+        top: 590px;
+        left: 515px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1.1rem;       
     }
 
     body {
         background-image: url("images/bg-pattern-desktop.svg");
     }
 
-}
+    .form.invalid .input-box:before {
+        position:absolute;
+        right: 990px;
+        top: 605px;  
+    }
+
+    .invalid #text {
+        padding-top: 1rem;
+        margin-left: 2.1rem;
+    }
+}    
+
